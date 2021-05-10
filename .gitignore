@@ -13,7 +13,8 @@
 /out/
 
 # production
-/build
+/build/
+/public/rss.xml
 
 # misc
 .DS_Store
