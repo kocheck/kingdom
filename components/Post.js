@@ -8,7 +8,7 @@ export const Post = ({ post }) => {
   } = post
 
   return (
-    <a className={styles.card} href={'/blog' + link}>
+    <a className={styles.card} href={'/documents' + link}>
       <div>
         <HeadPost meta={meta} />
           <p>Read more →</p>

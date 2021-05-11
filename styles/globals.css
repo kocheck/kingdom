@@ -1,9 +1,38 @@
+/* Define variables for Light Mode in this selector */
+:root {
+  /* Variables must to start with `--` */
+  --body-foreground: #111;
+
+  /* You can name these variables whatever you want */
+  --body-background: #fff;
+
+  --card-background: #eaeaea;
+
+  --primary-link: #0070f3;
+  --primary-link-hover: #004ba1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Override the Light Mode values */
+    --body-foreground: #eee;
+    --body-background: #111;
+    --card-background: #454545;
+    --primary-link: #0070f3;
+    --primary-link-hover: #004ba1;
+  }
+}
+
+
+/* =================== */
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: var(--body-background);
+    color: var(--body-foreground);
 }
 
 a {

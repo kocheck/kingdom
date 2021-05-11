@@ -1,15 +1,15 @@
 import Link from "next/link";
+import styles from "../styles/Nav.module.css";
 
 export default function Header() {
   return (
-    <nav>
-      <h1>Next'Blog</h1>
-      <div>
+    <nav className={styles.nav}>
       <Link href="/">
-          <a>Home</a>
+      <a className={styles.logo}>Kingdom of Dust</a>
         </Link>
-        <Link href="/">
-          <a>Blog</a>
+      <div>
+        <Link href="/documents">
+          <a>Documents</a>
         </Link>
         <Link href="/about">
           <a>About</a>
