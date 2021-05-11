@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import { HeadPost } from './HeadPost'
+import styles from '../styles/Home.module.css'
 
 export const Post = ({ post }) => {
   const {
@@ -8,11 +8,11 @@ export const Post = ({ post }) => {
   } = post
 
   return (
-      <article>
+    <a className={styles.card} href={'/blog' + link}>
+      <div>
         <HeadPost meta={meta} />
-        <Link href={'/blog' + link}>
-          <a>Read more →</a>
-        </Link>
-      </article>
+          <p>Read more →</p>
+          </div>
+      </a>
   )
 }
